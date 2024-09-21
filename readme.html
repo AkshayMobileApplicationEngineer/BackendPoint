@@ -3,20 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Backend Deployment</title>
 </head>
 <body>
     <center>
-        <h1>Backend </h1>
+        <h1>Backend Deployment</h1>
+        <p>This repository contains the backend services for the project. The backend is responsible for handling server-side operations, database connections, and API endpoints. The repository is organized into different branches for various deployment stages.</p>
+
+        <h2>Main Branch</h2>
+        <p>The main branch of this repository contains the production-ready code that has been thoroughly tested and is stable for deployment.</p>
         <a href="https://github.com/AkshayMobileApplicationEngineer/BackendPoint">Main Branch</a>
+
+        <h2>Branch Information</h2>
+        <table border="1" cellspacing="0" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Branch Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Day 01</td>
+                    <td>Deploy</td>
+                    <td>This branch is for the initial deployment of the backend service.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Setup Instructions</h2>
+        <h3>Prerequisites</h3>
+        <ul>
+            <li>Install <a href="https://nodejs.org/" target="_blank">Node.js</a> (v14 or above).</li>
+            <li>Ensure <a href="https://www.mongodb.com/" target="_blank">MongoDB</a> is installed and running.</li>
+        </ul>
+
+        <h3>Installation</h3>
+        <ol>
+            <li>Clone the repository:
+                <pre><code>git clone https://github.com/AkshayMobileApplicationEngineer/BackendPoint.git
+cd BackendPoint</code></pre>
+            </li>
+            <li>Install dependencies:
+                <pre><code>npm install</code></pre>
+            </li>
+            <li>Set up environment variables:
+                <pre><code>Create a .env file in the root directory.
+Add the following values:
+MONGO_URI=your_mongodb_connection_uri
+PORT=your_port_number</code></pre>
+            </li>
+            <li>Start the server:
+                <pre><code>npm start</code></pre>
+            </li>
+        </ol>
+
+        <h3>API Endpoints</h3>
+        <table border="1" cellspacing="0" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>Method</th>
+                    <th>Endpoint</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>GET</td>
+                    <td>/api/status</td>
+                    <td>Checks server status</td>
+                </tr>
+                <tr>
+                    <td>POST</td>
+                    <td>/api/login</td>
+                    <td>Handles user authentication</td>
+                </tr>
+                <tr>
+                    <td>GET</td>
+                    <td>/api/devices</td>
+                    <td>Fetches IoT device list</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Deployment</h3>
+        <p>To deploy the backend to a cloud provider like Heroku or AWS, follow the steps in their documentation. Make sure you configure environment variables for MongoDB, Firebase authentication, and cloud storage for seamless integration.</p>
     </center>
-    <table cellspacing="0" border="1" width="200">
-       <tbody width="100" >
-            <tr bgColor="Pink">
-                <th>Day </th>
-                <th>Branch Name</th>
-            </tr>
-       </tbody>
-    </table>
 </body>
 </html>
